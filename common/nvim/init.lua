@@ -1,3 +1,5 @@
+require('lsp/init')
+
 vim.opt.number = true
 vim.opt.cursorline = true
 
@@ -9,4 +11,6 @@ vim.call('plug#begin')
   Plug 'neovim/nvim-lspconfig'
 
 vim.call('plug#end')
+
+
 
