@@ -12,5 +12,6 @@ vim.cmd([[
   call plug#begin()
   Plug 'neovim/nvim-lspconfig'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+  Plug 'cohama/lexima.vim'
   call plug#end()
 ]])
