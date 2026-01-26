@@ -1,16 +1,16 @@
-require('lsp/init')
-
-vim.opt.number = true
-vim.opt.cursorline = true
+require('core.options')
+require('core.autocmds')
+require('lsp.init')
 
 local vim = vim
 local Plug = vim.fn['plug#']
 
-vim.call('plug#begin')
+local Plug = vim.fn['plug#']
 
+-- vim.cmdのラップにより、VimScriptの使用を可能に
+vim.cmd([[
+  call plug#begin()
   Plug 'neovim/nvim-lspconfig'
-
-vim.call('plug#end')
-
-
-
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+  call plug#end()
+]])
