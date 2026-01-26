@@ -13,5 +13,11 @@ vim.cmd([[
   Plug 'neovim/nvim-lspconfig'
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
   Plug 'cohama/lexima.vim'
+  Plug 'neanias/everforest-nvim', { 'branch': 'main' }
   call plug#end()
 ]])
+
+-- Colorschemeをeverforestに設定
+vim.cmd([[colorscheme everforest]])
+
+
