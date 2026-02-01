@@ -20,3 +20,6 @@
 # Add your custom aliases here
 # alias zshconfig="$EDITOR ~/.zshrc"
 
+# grc
+alias ifconfig='grc ifconfig'
+
