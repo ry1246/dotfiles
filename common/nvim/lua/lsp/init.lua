@@ -1,5 +1,6 @@
 local lsp_names = {
-	'lua_ls',
+  'eslint',
+  'lua_ls',
 	'ts_ls'
 }
 
