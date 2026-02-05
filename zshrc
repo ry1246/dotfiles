@@ -18,8 +18,8 @@
 # Aliases
 # ===================================================================
 # Add your custom aliases here
-# alias zshconfig="$EDITOR ~/.zshrc"
+alias ls='ls -G'
 
 # grc
 alias ifconfig='grc ifconfig'
-
+alias brew='grc brew'
