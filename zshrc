@@ -23,3 +23,12 @@ alias ls='ls -G'
 # grc
 alias ifconfig='grc ifconfig'
 alias brew='grc brew'
+
+# 自作
+alias atcoder='~/omochi/atcoder/js/ABC/new.sh'
+
+# ===================================================================
+# Function
+# ===================================================================
+# AtCoder settings
+
