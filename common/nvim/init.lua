@@ -1,9 +1,6 @@
 require('core.options')
 require('core.autocmds')
 
-local vim = vim
-local Plug = vim.fn['plug#']
-
 -- vim.cmdのラップにより、VimScriptの使用を可能に
 vim.cmd([[
   call plug#begin()
