@@ -1,7 +1,10 @@
 local lsp_names = {
   'eslint',
   'lua_ls',
-	'ts_ls'
+	'ts_ls',
+  'html',
+  'cssls',
+  'emmet_ls'
 }
 -- nvim-cmp configuration（未インストール時はデフォルトcapabilitiesにフォールバック）
 local ok, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
