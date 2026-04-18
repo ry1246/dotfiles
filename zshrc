@@ -25,7 +25,7 @@ alias ifconfig='grc ifconfig'
 alias brew='grc brew'
 
 # 自作
-alias atcoder='~/omochi/atcoder/js/ABC/new.sh'
+alias new='~/omochi/atcoder/js/ABC/new.sh'
 
 # ===================================================================
 # Function

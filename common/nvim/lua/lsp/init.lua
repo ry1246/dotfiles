@@ -1,7 +1,7 @@
 local lsp_names = {
   'eslint',
   'lua_ls',
-	'ts_ls',
+  'ts_ls',
   'html',
   'cssls',
   'emmet_ls'
