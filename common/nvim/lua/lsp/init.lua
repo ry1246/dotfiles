@@ -4,7 +4,8 @@ local lsp_names = {
   'ts_ls',
   'html',
   'cssls',
-  'emmet_ls'
+  'emmet_ls',
+  'gopls'
 }
 -- nvim-cmp configuration（未インストール時はデフォルトcapabilitiesにフォールバック）
 local ok, cmp_nvim_lsp = pcall(require, 'cmp_nvim_lsp')
@@ -15,6 +16,16 @@ for _, name in ipairs(lsp_names) do
     capabilities = capabilities,
   })
 end
+
+vim.lsp.config('gopls', {
+  settings = {
+    gopls = {
+      analyses = { unusedparams = true },
+      staticcheck = true,
+      gofumpt = true,
+    },
+  },
+})
 
 vim.lsp.enable(lsp_names)
 vim.api.nvim_create_autocmd('LspAttach', {
