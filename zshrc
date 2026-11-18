@@ -32,3 +32,8 @@ alias new='~/omochi/atcoder/js/ABC/new.sh'
 # ===================================================================
 # AtCoder settings
 
+
+# Created by `pipx` on 2026-09-08 10:09:57
+export PATH="$PATH:/Users/ohagi/.local/bin"
+
+export PATH="$PATH:$(go env GOPATH)/bin"
